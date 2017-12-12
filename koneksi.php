@@ -1,11 +1,4 @@
 <?php
-$hostname ="localhost";
-$username ="root";
-$password ="";
-$connect=mysql_connect($hostname, $username, $password);
-if(connect){
-    echo "Berhasil";
-}
-else{
-    echo "gagal";
-}
+mysql_connect("localhost","root","") or die ("Gagal Terhubung Ke Database");
+mysql_select_db("login") or die ("Database Tidak Ditemukan");
+?>
